@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD COLUMN user_type VARCHAR(100) DEFAULT "application";

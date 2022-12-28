@@ -11,6 +11,7 @@ if(request() == 'POST')
     $user = $db->single('users',[
         'username' => $_POST['username'],
         'password' => md5($_POST['password']),
+        'user_type' => 'application'
     ]);
 
     if($user)

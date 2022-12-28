@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/renz8253/public_html/ciptakerja
+    - /bin/cp -a * $DEPLOYPATH

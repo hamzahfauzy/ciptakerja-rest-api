@@ -28,7 +28,8 @@ $config = [
         'sidebar_color'    => 'nav-primary',
         'panel_color'      => 'bg-primary-gradient',
         'button_main_color'=> 'btn-primary',
-    ]
+    ],
+    'jagel_api_url' => 'https://api.jagel.id/v1/'
 ];
 
 $app['base_url'] = $app['app_protocol'].'://'.$app['app_domain'].($app['app_port']!=''?':'.$app['app_port']:'');
