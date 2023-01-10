@@ -17,6 +17,7 @@ require $parent_path . 'libs/Session.php';
 require $parent_path . 'libs/Database.php';
 require $parent_path . 'libs/Page.php';
 require $parent_path . 'libs/Validation.php';
+require $parent_path . 'libs/Snap.php';
 
 $config = require $parent_path . 'config/main.php';
 
@@ -702,4 +703,9 @@ function getBearerToken() {
         }
     }
     return null;
+}
+
+function generateVA()
+{
+    return mt_rand(1000, 9999) . strtotime('now');
 }

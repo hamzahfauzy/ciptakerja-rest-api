@@ -72,6 +72,7 @@ CREATE TABLE `topup` (
   `pesanan_nomor` varchar(45) NOT NULL,
   `pesanan_total` int(11) NOT NULL,
   `hp` varchar(20) DEFAULT NULL,
+  `va` varchar(100) DEFAULT NULL,
   `payment_type` varchar(45) NOT NULL,
   `payment_ref` varchar(45) NOT NULL,
   `status` varchar(20) DEFAULT "MENUNGGU",

@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: *");
 header("Content-Type: application/json");
 
-if(startWith($route, 'api/v1/'))
+if(startWith($route, 'api/v1/') && $route != 'api/v1/virtual-accounts/create')
 {
     // check if token is sent
     $token = getBearerToken();

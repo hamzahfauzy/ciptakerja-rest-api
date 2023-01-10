@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/renz8253/public_html/ciptakerja
+    - export DEPLOYPATH=/home/renz8253/public_html/ciptakerja.id
     - /bin/cp -a * $DEPLOYPATH
