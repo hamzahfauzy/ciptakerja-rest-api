@@ -7,26 +7,6 @@ if(request() != 'POST')
     die();
 }
 
-if(!isset($_POST['token']))
-{
-    http_response_code(403);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Api key is required'
-    ]);
-    die();
-}
-
-if(trim($_POST['token']) != trim(app('cipta_kerja_api_key')))
-{
-    http_response_code(403);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Api key is not valid'
-    ]);
-    die();
-}
-
 $conn  = conn();
 $db    = new Database($conn);
 

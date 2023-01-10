@@ -6,7 +6,7 @@ async function loadVa()
         method:'POST',
         headers:{
             'content-type':'application/x-www-form-urlencoded',
-            // 'Authorization': 'Bearer '+vaJs.token
+            'Authorization': 'Bearer '+vaJs.token
         },
         body:buildQuery(vaJs)
     })
