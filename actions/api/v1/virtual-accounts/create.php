@@ -109,7 +109,7 @@ else
     $va = generateVa();
     $body = '{
         "partnerServiceId":"'.config('snap_partner_service_id').'",
-        "customerNo":"'.$userid.'",
+        "customerNo":"'.substr($userid,19).'",
         "virtualAccountNo":"'.config('snap_partner_service_id').$va.'",
         "virtualAccountName":"'.$nama.'",
         "virtualAccountEmail":"'.$nama.'",
